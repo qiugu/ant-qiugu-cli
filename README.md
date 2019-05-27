@@ -4,7 +4,13 @@
 npm package
 Feature
 
-    Based on ue-cli3.0, add axios to encapsulate HTTP request, permission setting, global navigation hook, unified code style verification, basic login registration page and page style initialization, etc
+Based on vue-cli3.0, added a lot of configuration, reduce the duplication of work
+* axios config
+* ant-design-vue UI framework
+* Permission management
+* normalize css style
+* base page such as login,register
+* vue.config.js config
 
 ## Usage
 Installation
