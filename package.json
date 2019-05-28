@@ -1,6 +1,6 @@
 {
   "name": "ant-qg-cli",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "cli ant-design vue",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,6 @@
     "ora": "^3.4.0"
   },
   "bin": {
-    "ant": "./bin/main.js"
+    "qg": "./bin/main.js"
   }
 }
