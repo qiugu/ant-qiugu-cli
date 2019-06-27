@@ -32,6 +32,6 @@ cmd
 
 //解析命令行
 cmd.parse(process.argv);
-if (!cmd.args.length) {
+if (!cmd.args.length || cmd.args.length <= 1) {
   cmd.help();
 }
