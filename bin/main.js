@@ -15,7 +15,7 @@ const exec = (type, ...args) => {
 cmd
   .usage("<command>")
   .version(pkg.version)
-  .description("感谢使用ant-qg-cli脚手架，爱你哟！");
+  .description("感谢您使用ant-qg-cli脚手架，麽麽哒！");
 
 cmd
   .command("init")
