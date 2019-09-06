@@ -20,12 +20,20 @@ Prerequisites: Node.js (>=6.x, 8.x preferred), npm version 3+ and Git.
 ```
 $ npm install ant-qg-cli -g
 ```
+Optional:
+* description: describe your project
+* version: input your project version
+* author: input your project author
+* select config:
+  1. according to the need to load config
+  2. default roles permission config files
+  3. management system login,register component
+  4. unit test module
 
-New a Ant Design Vue template
+create a Ant Design Vue template
 
 ```
-$ cd your application
-$ npm run serve
+$ qg init application
 ```
 
 Prettier eslint your code
