@@ -1,6 +1,6 @@
 {
   "name": "ant-qg-cli",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "cli ant-design vue",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,8 @@
     "qg": "./bin/main.js"
   },
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "yeoman-generator": "^4.2.0"
   },
   "homepage": "https://github.com/qiugu/ant-qg-cli"
 }
