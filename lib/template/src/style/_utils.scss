@@ -1,0 +1,257 @@
+/*device-pixel-ratio*/
+@media(-webkit-min-device-pixel-ratio:1.5),
+(min-device-pixel-ratio:1.5) {
+    .border-t-1px {
+        &::before {
+            -webkit-transform: scaleY(0.7);
+            transform: scaleY(0.7);
+        }
+    }
+}
+
+@media(-webkit-min-device-pixel-ratio:2),
+(min-device-pixel-ratio:2) {
+    .border-t-1px {
+        &::before {
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+        }
+    }
+}
+
+@media(-webkit-min-device-pixel-ratio:2.5),
+(min-device-pixel-ratio:2.5) {
+    .border-t-1px {
+        &::before {
+            -webkit-transform: scaleY(0.33333334);
+            transform: scaleY(0.33333334);
+        }
+    }
+}
+
+@media(-webkit-min-device-pixel-ratio:1.5),
+(min-device-pixel-ratio:1.5) {
+    .border-b-1px {
+        &::after {
+            -webkit-transform: scaleY(0.7);
+            transform: scaleY(0.7);
+        }
+    }
+}
+
+@media(-webkit-min-device-pixel-ratio:2),
+(min-device-pixel-ratio:2) {
+    .border-b-1px {
+        &::after {
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+        }
+    }
+}
+
+@media(-webkit-min-device-pixel-ratio:2.5),
+(min-device-pixel-ratio:2.5) {
+    .border-b-1px {
+        &::after {
+            -webkit-transform: scaleY(0.33333334);
+            transform: scaleY(0.33333334);
+        }
+    }
+}
+/* 浮动 */
+.pull-left,.fl 	{ float: left !important;}
+.pull-right,.fr {float: right !important;}
+/* 清浮动 */
+.clearfix:before,
+.clearfix:after {content: " ";display: table;}
+.clearfix:after {clear: both;}
+/* 对齐的方式 Align */
+.align-baseline { vertical-align: baseline !important;} 
+.align-top {vertical-align: top !important;}
+.align-middle { vertical-align: middle !important;}
+.align-bottom { vertical-align: bottom !important;}
+.align-text-bottom { vertical-align: text-bottom !important;}
+.align-text-top    { vertical-align: text-top !important; }
+.align-center,.text-center 	{text-align:center !important;}
+.align-left,.text-left 	{text-align: left !important}
+.align-right,.text-right 	{text-align: right !important;}
+.align-justify,.text-justify {text-align:justify}
+
+/* Display */
+.d-none         { display: none !important; }
+.d-visible 		{ visibility: visible !important;}
+.d-invisible 	{ visibility: hidden !important;}
+.d-inline       { display: inline !important; }
+.d-inline-block { display: inline-block !important; }
+.d-block        { display: block !important; }
+.d-table        { display: table !important; }
+.d-table-cell   { display: table-cell !important; }
+.d-flex         { display: flex !important; }
+.d-inline-flex  { display: inline-flex !important; }
+
+/*Overflow*/
+.of-auto      { overflow: auto !important; }
+.of-hidden    { overflow: hidden !important; }
+.of-scroll    { overflow: scroll !important; }
+.of-visible   { overflow: visible !important; }
+.ofx-auto     { overflow-x: auto !important; }
+.ofx-hidden   { overflow-x: hidden !important; }
+.ofx-scroll   { overflow-x: scroll !important; }
+.ofx-visible  { overflow-x: visible !important; }
+.ofy-auto     { overflow-y: auto !important; }
+.ofy-hidden   { overflow-y: hidden !important; }
+.ofy-scroll   { overflow-y: scroll !important; }
+.ofy-visible  { overflow-y: visible !important; }
+
+/* 文字 */
+$size: 40;
+$type-width: 1px;
+@while $size > 12 {
+  .font-#{$size} {
+    font-size: $type-width * $size;
+  }
+  $size: $size - 1;
+}
+.strong {font-weight:bold}
+
+// 文本颜色
+.text-primary { @include text-color($brand-primary);}
+.text-secondary { @include text-color($brand-secondary);}
+.text-secondary-i  { color: $brand-secondary !important;}
+.text-info        {@include text-color($brand-info); }
+.text-info-alt    {@include text-color($brand-info-alt); }
+.text-success     {@include text-color($brand-success); }
+.text-warning     {@include text-color($brand-warning); }
+.text-danger      {@include text-color($brand-danger); }
+.text-danger-alt  {@include text-color($brand-danger-alt); }
+.text-black       {@include text-color($black); }
+.text-black-light {@include text-color($black-light); }
+.text-gray        {@include text-color($gray); }
+.text-gray-light  {@include text-color($gray-light);}
+.text-white       {@include text-color($white); }
+.text-red         {@include text-color($red); }
+.text-green       {@include text-color($green); }
+.text-save        {@include text-color($green-dark); }
+
+// 背景颜色
+.bg-primary { @include bg-color($brand-primary);}
+.bg-secondary {@include bg-color($brand-secondary);}
+.bg-info   {@include bg-color($brand-info);}
+.bg-info-alt {@include bg-color($brand-info-alt);}
+.bg-success  {@include bg-color($brand-success);}
+.bg-warning {@include bg-color($brand-warning);}
+.bg-danger        { @include bg-color($brand-danger); }
+.bg-danger-alt    { @include bg-color($brand-danger-alt); }
+.bg-black         { @include bg-color($black); }
+.bg-gray-lighter2 { @include bg-color($gray-lighter2); }
+.bg-white         { @include bg-color($white); }
+.bg-third        { @include bg-color($bg-third); }
+.bg-first         { @include bg-color($first)}
+.bg-nav           { @include bg-color($nav)}
+
+// 边框颜色
+.border-white { border: 1px solid $white; }
+.bg-nav-brand    { background-color: $nav-brand; }
+
+.headline,
+.headline-primary,
+.headline-secondary,
+.headline-info,
+.headline-info-alt,
+.headline-success,
+.headline-warning,
+.headline-danger,
+.headline-danger-alt,
+.headline-black {
+  padding-left: 10px;
+  border-left: 4px solid $gray;
+}
+
+.headline-primary     { border-color: $brand-primary; }
+.headline-secondary   { border-color: $brand-secondary; }
+.headline-info        { border-color: $brand-info; }
+.headline-info-alt    { border-color: $brand-info-alt; }
+.headline-success     { border-color: $brand-success; }
+.headline-warning     { border-color: $brand-warning; }
+.headline-danger      { border-color: $brand-danger; }
+.headline-danger-alt  { border-color: $brand-danger-alt; }
+.headline-black       { border-color: $black; }
+.default-bg           { background-color: $default-bg; }
+
+/* 空间 */
+$size-unit:1px;
+@for $i from 1 through 200 {
+  .pt-#{$i}{
+    padding-top: $size-unit * $i !important;
+  }
+
+  .pb-#{$i}{
+    padding-bottom: $size-unit * $i !important;
+  }
+
+  .pl-#{$i}{
+    padding-left: $size-unit * $i !important;
+  }
+
+  .pr-#{$i}{
+    padding-right: $size-unit * $i !important;
+  }
+
+  .px-#{$i}{
+    padding-right: $size-unit * $i !important;
+    padding-left: $size-unit * $i !important;
+  }
+
+  .py-#{$i}{
+    padding-top: $size-unit * $i !important;
+    padding-bottom: $size-unit * $i !important;
+  }
+
+  .p-#{$i}{
+    padding: $size-unit * $i !important;
+  }
+}
+
+@for $i from 1 through 200 {
+  .mt-#{$i}{
+    margin-top: $size-unit * $i !important;
+  }
+  .mr-#{$i}{
+    margin-right: $size-unit * $i !important;
+  }
+  .mb-#{$i}{
+    margin-bottom: $size-unit * $i !important;
+  }
+  .ml-#{$i}{
+    margin-left: $size-unit * $i !important;
+  }
+  .mx-#{$i}{
+    margin-left: $size-unit * $i !important;
+    margin-right: $size-unit * $i !important;
+  }
+  .my-#{$i}{
+    margin-top: $size-unit * $i !important;
+    margin-bottom: $size-unit * $i !important;
+  }
+  .m-#{$i}{
+    margin: $size-unit * $i !important;
+  }
+}
+// Some special margin utils
+.m-auto  { margin:        auto !important; }
+.mt-auto { margin-top:    auto !important; }
+.mr-auto { margin-right:  auto !important; }
+.mb-auto { margin-bottom: auto !important; }
+.ml-auto { margin-left:   auto !important; }
+.mx-auto {
+  margin-right: auto !important;
+  margin-left:  auto !important;
+}
+.my-auto {
+  margin-top:    auto !important;
+  margin-bottom: auto !important;
+}
+
+
+
+
