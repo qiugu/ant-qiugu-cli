@@ -1,2 +1,2 @@
-# ant-qiugu-template
-ant-design脚手架模板
+# qg-vue-cli
+vue脚手架模板
